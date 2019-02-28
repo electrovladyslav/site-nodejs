@@ -3,7 +3,7 @@ html(lang='ru')
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
-    title='Electrovlad\'s Blog' + title
+    title=title + ' Electrovlad\'s Blog' 
     link(rel='icon' type='image/png' href='img/favicon.png')
     link(rel='stylesheet', href='/stylesheets/style.css')
 
@@ -13,13 +13,15 @@ html(lang='ru')
     meta(name='description' content='Влада блогосайт')
     
   body
-    block content
+    div.page-wrapper
+      main.main
+        block content
 
-  footer.footer
-    div.footer__produced
-      a(href="https://web.facebook.com/profile.php?id=100001634533512"
-            title="facebook") Ермолин Владислав
-      span , 2017-2019.
-    div.footer__mail Email: 
-      a(href="mailto:electrovladyslav@gmail.com") electrovladyslav@gmail.com.
+      footer.footer
+        div.footer__produced
+          a(href="https://web.facebook.com/profile.php?id=100001634533512"
+                title="facebook") Ермолин Владислав
+          span , 2017-2019.
+        div.footer__mail Email: 
+          a(href="mailto:electrovladyslav@gmail.com") electrovladyslav@gmail.com.
       

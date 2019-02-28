@@ -191,11 +191,11 @@ select:hover {
 }
 .promo.promo--blog-fixiks {
   min-height: 512px;
-  background-image: url(../img/blog_fixiks_mobile.jpg);
+  background-image: url(../img/blog_fixiks_promo_mobile.jpg);
 }
 .promo.promo--blog-miami {
   min-height: 512px;
-  background-image: url(../img/blog_miami_mobile.jpg);
+  background-image: url(../img/blog_miami_promo_mobile.jpg);
   background-position-y: 100%;
 }
 .promo__header {
@@ -212,11 +212,11 @@ select:hover {
   }
   .promo.promo--blog-fixiks {
     min-height: 720px;
-    background-image: url(../img/blog_fixiks_desktop.jpg);
+    background-image: url(../img/blog_fixiks_promo_desktop.jpg);
   }
   .promo.promo--blog-miami {
     min-height: 720px;
-    background-image: url(../img/blog_miami_desktop.jpg);
+    background-image: url(../img/blog_miami_promo_desktop.jpg);
   }
   .promo__header {
     font-size: 80px;

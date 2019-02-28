@@ -1,99 +1,97 @@
 extends layout
 
 block content
-  div.page-wrapper
-    main.main
-      .promo
-        h1.promo__header
-          span.lang.lang-ru Я - Влад, и это
-            br.mobile-only
-            |
-            | мой
-            |
-            span.crossed блог
-            |
-            | сайт.
-          span.lang.lang-en.hidden I'm Vlad and that
-            br.mobile-only
-            |
-            | is my 
-            |
-            span.crossed blog
-            |
-            | site.
-      
-      .intro
-        h2.intro__header
-          span.lang.lang-ru Привет!
-          span.lang.lang-en.hidden Hello!
-        .intro__text
-          p.intro__text-paragraph
-            span.lang.lang-ru Я фронтэнд разработчик / судовой электромеханик. Пока хожу по морям, планирую к концу 2019 работать в отличной IT-компании, в Киеве;).
-            // TODO обновить резюме и привести ссылку 
-            // Вот моё актуальное резюме 
-          p.intro__text-paragraph
-            span.lang.lang-ru Я фронтэнд разработчик / судовой электромеханик. Пока хожу по морям, планирую к концу 2019 работать в отличной IT-компании, в Киеве;).Я так подумал: ну какой блог в 2019? Для этого есть соцсети. Потому, всю свежую информацию о моей жизни (если она кому-то интересна),ищите на моей страничке в&nbsp;
-              a(href="https://www.facebook.com/profile.php?id=100001634533512").link Facebook 
-              |. На этом сайте я буду тренироваться в веб-делах и сохранять интересную для меня информацию. Текущий проект - перевод этого сайта на связку node.js-pug.
-          p.intro__text-paragraph
-            span.lang.lang-ru Сейчас я работаю электромехаником на контейнеровозе "Kalamoti Trader". Вот онлайн-карта, которая должна показывать, где сейчас находится мой пароход. Но, иногда информация запаздывает, и позиция судна на карте отличается от реальной.
+  .promo
+    h1.promo__header
+      span.lang.lang-ru Я - Влад, и это
+        br.mobile-only
+        |
+        | мой
+        |
+        span.crossed блог
+        |
+        | сайт.
+      span.lang.lang-en.hidden I'm Vlad and that
+        br.mobile-only
+        |
+        | is my 
+        |
+        span.crossed blog
+        |
+        | site.
+  
+  .intro
+    h2.intro__header
+      span.lang.lang-ru Привет!
+      span.lang.lang-en.hidden Hello!
+    .intro__text
+      p.intro__text-paragraph
+        span.lang.lang-ru Я фронтэнд разработчик / судовой электромеханик. Пока хожу по морям, планирую к концу 2019 работать в отличной IT-компании, в Киеве;).
+        // TODO обновить резюме и привести ссылку 
+        // Вот моё актуальное резюме 
+      p.intro__text-paragraph
+        span.lang.lang-ru Я фронтэнд разработчик / судовой электромеханик. Пока хожу по морям, планирую к концу 2019 работать в отличной IT-компании, в Киеве;).Я так подумал: ну какой блог в 2019? Для этого есть соцсети. Потому, всю свежую информацию о моей жизни (если она кому-то интересна),ищите на моей страничке в&nbsp;
+          a(href="https://www.facebook.com/profile.php?id=100001634533512").link Facebook 
+          |. На этом сайте я буду тренироваться в веб-делах и сохранять интересную для меня информацию. Текущий проект - перевод этого сайта на связку node.js-pug.
+      p.intro__text-paragraph
+        span.lang.lang-ru Сейчас я работаю электромехаником на контейнеровозе "Kalamoti Trader". Вот онлайн-карта, которая должна показывать, где сейчас находится мой пароход. Но, иногда информация запаздывает, и позиция судна на карте отличается от реальной.
 
-      // Marine traffic map
-      .map
-        script(src="js/marine-traffic-settings.js" defer)
-        //- script(src="https://www.marinetraffic.com/js/embed.js" defer)
-      
-      //- .blogposts-container
-      //-   h2
-      //-     span.lang.lang-ru Блог
-      //-     span.lang.lang-en.hidden Blog
+  // Marine traffic map
+  .map
+    script(src="js/marine-traffic-settings.js" defer)
+    //- script(src="https://www.marinetraffic.com/js/embed.js" defer)
+  
+  .blogposts-container
+    h2
+      span.lang.lang-ru Блог
+      span.lang.lang-en.hidden Blog
 
-      //-   article.blogpost-preview
-      //-     a(href='blog-miami.html')
-      //-       picture.blogpost-preview__picture
-      //-         source(
-      //-           media="(min-width: 1180px)"
-      //-           srcset="img/blogpost_preview_miami_trader_cutted.jpg"
-      //-         )
-      //-         img(
-      //-           src="img/blogpost_preview_miami_trader_cutted_mobile.jpg"
-      //-           class="blogpost-preview__img blogpost__img--miami"
-      //-           alt="Miami"
-      //-         )
-      //-     .blogpost-preview__body
-      //-       .blogpost-preview__date
-      //-         span.lang.lang-ru 25 января 2019
-      //-         span.lang.lang-en.hidden 25th of January 2019
-      //-       h3.blogpost-preview__header Miami Trader - 2017
-      //-       p.blogpost-preview__text 🚢 В 2017 я работал на этом лайнере мечты.
-      //-       a(
-      //-         href="blog-miami.html" class="blogpost-preview__more btn"
-      //-       )
-      //-         span.lang.lang-ru Читать
-      //-         span.lang.lang-en.hidden Read
+    //- article.blogpost-preview
+    //-   a(href='blog-miami.html')
+    //-     picture.blogpost-preview__picture
+    //-       source(
+    //-         media="(min-width: 1180px)"
+    //-         srcset="img/blogpost_preview_miami_trader_cutted.jpg"
+    //-       )
+    //-       img(
+    //-         src="img/blogpost_preview_miami_trader_cutted_mobile.jpg"
+    //-         class="blogpost-preview__img blogpost__img--miami"
+    //-         alt="Miami"
+    //-       )
+    //-   .blogpost-preview__body
+    //-     .blogpost-preview__date
+    //-       span.lang.lang-ru 25 января 2019
+    //-       span.lang.lang-en.hidden 25th of January 2019
+    //-     h3.blogpost-preview__header Miami Trader - 2017
+    //-     p.blogpost-preview__text 🚢 В 2017 я работал на этом лайнере мечты.
+    //-     a(
+    //-       href="blog-miami.html" class="blogpost-preview__more btn"
+    //-     )
+    //-       span.lang.lang-ru Читать
+    //-       span.lang.lang-en.hidden Read 
 
-      //-   article.blogpost-preview
-      //-     a(href='blog-fixiks.html')
-      //-       picture.blogpost-preview__picture
-      //-         source(
-      //-           media="(min-width: 1180px)"
-      //-           srcset="img/blogpost_preview_fixiks_cutted.jpg"
-      //-         )
-      //-         img(
-      //-           src="img/blogpost_preview_fixiks_cutted_mobile.jpg"
-      //-           class="blogpost-preview__img"
-      //-           alt="Fixiks"
-      //-         )
-      //-     .blogpost-preview__body
-      //-       .blogpost-preview__date
-      //-         span.lang.lang-ru 20 Апреля 2018
-      //-         span.lang.lang-en.hidden 20th of April 2018
-      //-       h3.blogpost-preview__header 
-      //-         span.lang.lang-ru А кто такие фиксики? Большой большой секрет!
-      //-         span.lang.lang-en.hidden So who are the Fixiks? It's a big secret!
-      //-       p.blogpost-preview__text 👨🏽‍🔧 Я заметил, что моряки, особенно те, кто работает в машинном отделении, очень похожи на фиксиков.
-      //-       a(
-      //-         href="blog-fixiks.html" class="blogpost-preview__more btn"
-      //-       )
-      //-         span.lang.lang-ru Читать
-      //-         span.lang.lang-en.hidden Read
+    article.blogpost-preview
+      a(href='blog/fixiks.html')
+        picture.blogpost-preview__picture
+          source(
+            media="(min-width: 1180px)"
+            srcset="img/blogpost_preview_fixiks_cutted.jpg"
+          )
+          img(
+            src="img/blogpost_preview_fixiks_cutted_mobile.jpg"
+            class="blogpost-preview__img"
+            alt="Fixiks"
+          )
+      .blogpost-preview__body
+        .blogpost-preview__date
+          span.lang.lang-ru 20 Апреля 2018
+          span.lang.lang-en.hidden 20th of April 2018
+        h3.blogpost-preview__header 
+          span.lang.lang-ru А кто такие фиксики? Большой большой секрет!
+          span.lang.lang-en.hidden So who are the Fixiks? It's a big secret!
+        p.blogpost-preview__text 👨🏽‍🔧 Я заметил, что моряки, особенно те, кто работает в машинном отделении, очень похожи на фиксиков.
+        a(
+          href="blog/fixiks.html" class="blogpost-preview__more btn"
+        )
+          span.lang.lang-ru Читать
+          span.lang.lang-en.hidden Read
